@@ -1,0 +1,418 @@
+<!--首页-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为往圣继绝学</title>
+    <link rel="icon" type="image/x-icon" href="https://pic2.imgdb.cn/item/6452f81f0d2dde577707285b.jpg" />
+    <!-- <link type="text/css" rel="stylesheet" href="2-2.css"/> -->
+    <style>
+                *{
+            margin: auto;
+            /* background-color: #f8fadb; */
+        }
+        #head{
+            width:100%;
+            height: 100px;
+            background-image: url("https://pic.imgdb.cn/item/642d135fa682492fccde13a7.png");
+            background-repeat: repeat;
+        }
+        #head2{
+            margin: 0px 0px 0px 15%;
+            width: 85%;/*图片所在div长85%*/
+            height: 100px;
+            border:0;
+            float: left;
+        }
+        #h2pic1{
+            width: 23%;
+            height: 100px;
+            float: left;
+            padding: 5px 0px 5px 0px;
+            /* border:1px solid #333333; */
+        }
+        #h2pic2{
+            width: 50%;
+            height: 100px;
+            float: left;
+            padding: 0px 0px 18px 0px;
+            /* border:1px solid #333333; */
+        }
+        #time{
+            margin: 18px 17px 0px 0px;/*上右下左外距*/
+            width: auto;
+            height: 25px;
+            float: right;/*左浮动*/
+            text-align: center;
+            color: #3378d7;
+            /* background-color: rgb(252, 252, 252);时钟背景颜色 */
+            font-size: 15px;/*时间字体大小*/
+            /* border:1px solid #333333; */
+        } 
+        #search{
+            width: 22%;
+            height: auto;
+            float: right; 
+            padding: 10px 0px 0px 0px;
+        } 
+        #s1{
+            width: 65%;
+            height: auto;
+            float: left;
+        }
+        #s2{
+            width: 25%;
+            height: auto;
+            float: right;
+        }
+        #menu{
+            padding-left:15%;/*导航栏位置据开头*/
+            margin:0 auto;
+            text-align:center;
+            /* width:100%; */
+            height:60px;
+            background:#f8fadb;
+            border-bottom:1px solid #7f0808;/*底部边框类型颜色*/
+        }
+        #menu{
+    padding-left:15%;/*导航栏位置据开头*/
+    margin:0 auto;
+    text-align:center;
+    /* width:100%; */
+    height:60px;
+    background:#3c3a37;/*#f8fadb*/
+    border-bottom:1px solid #7f0808;/*底部边框类型颜色*/
+}
+#menu ul{
+    margin:0px;
+    padding:0px;
+    text-align:center;/*文本居中*/
+}
+.submenu{
+    width:1000px;/*二级盒子长*/
+    height:28px;
+    text-align:center;
+}
+#menu ul li{
+    height:30px;
+    width:115px;
+    list-style:none;
+    float:left;
+    display:inline;/*设置对象作为行内元素*/
+    font:0.9em Arial,Helvetica,sana-serif;/*列表字体属性*/
+    text-align:center;
+}
+ul li a{
+    color:#FFF;/*一级导航字体颜色#3378d7*/
+    width:114px;
+    margin:0px;
+    padding:0px 0px 0px 0px ;
+    text-decoration:none;
+    display:block;/*设置成块级元素*/
+    background:#3c3a37;/*一级导航块颜色*/
+    line-height:29px;
+    border-bottom:1px solid #ccc;
+}
+ul li .submenu ul li{
+    height :25px;/*二级列表高度*/
+}
+ul li .submenu ul li a{
+    color: #eeb01f;/*二级字体颜色*/
+    background:rgb(64, 67, 67);/*二级导航栏本身背景*/
+}
+ul li a:hover{
+    background:rgb(56, 52, 52);/*一级背景*/
+    border-bottom:1px dashed red;/*边框底部颜色类型*/
+}
+ul li .submenu{
+    display:none;/*隐藏二级导航*/
+}
+.submenu ul li{
+    height:24px;
+    width:113px;
+    list-style:none;/*列标：无*/
+    float:left;
+    display:inline;
+    font:0.8em Arial, Helvetica, sans-serif;
+    text-align:center; 
+}
+ul li:hover .submenu{
+    display:block;
+}
+ul li .submenu ul li a:hover{
+    color: #FFF;/*滑动时字体颜色*/
+    background:rgb(6, 75, 100);/*二级导航滑动时背景*/
+}
+        a{
+            text-decoration: none;/*无下划线*/
+        }
+        /* 内容css */
+        #le{
+            width: 15%;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            float: left;
+        }
+        #cen{
+            margin: 0;
+            width: 70%;
+            height: auto;
+            background-color: #fafbe0;
+            float: left;
+            /* border-top:10px solid #3378d7;    */
+            border-bottom:10px solid #3378d7;   
+        }
+        #b11{
+            color: #3378d7;
+        }
+        #cen1{
+            margin: 30px;
+            width: auto;
+            height: 1940px;
+            border-style: dashed;
+            border-color: rgb(243, 183, 104);
+            border-radius: 100px 30px;
+            padding: 2em;
+        }
+        .p1{
+            text-indent: 2em;font-family: 黑体;line-height: 1.5em;
+        }
+        .ppic1{
+            border-radius: 20px 30px;
+        } 
+        
+        #ri{
+            width: 15%;
+            height: 1500px;
+            background-color: rgb(255, 255, 255);
+            float: right;
+        }
+        /* 底部css */
+        #bo{
+    width: 100%;
+    height: 170px;
+    padding: 0px 0px 0px 15% ;
+    float: left;
+    border-bottom: 20px solid #1e1d19;
+}
+#b1{
+    width: 70%;
+    height: 170px;
+    float: left;
+    /* margin: 0 auto; */
+    background-color: #3c3a37;/*#fafbe0*/
+    /* border:solid #e041d0; */
+}
+#b1pic1{
+    width: 20%;
+    height: 110px;
+    float: left;
+    /* border:solid #7f0808; */
+    padding: 50px 0px 0px 60px;
+}
+#b1p{
+    width: 60%;
+    height: auto;
+    float: left;
+    /* border:solid #49ae2a; */
+    padding: 30px 30px 40px 80px;
+}
+#b1p1{/*友情链接*/
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+#b1p2{
+    color: #fffefe;
+    align-items: center;
+}
+.b1{
+    color:#e0c455 ;/*#3377d7*/
+}
+        #divpic:hover{
+            cursor: pointer;
+            transform: rotateX(30deg);
+            opacity: 1;
+        }
+
+    </style>
+<!-- 头部时间js -->
+    <script>
+        function showTime(){
+            var time = new Date();
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            var year = time.getUTCFullYear();
+            var month = time.getUTCMonth()+1;
+            var day = time.getUTCDate();
+            var mytime = year + "年" + month + "月" + day + "日" + hour + ":" +minute+ ":" +second;
+            document.getElementById("time").innerHTML= mytime;
+            setTimeout("showTime()",1000);
+        }
+        function search() {
+            var searchTerm = document.getElementById("search-term").value;
+            var found = window.find(searchTerm, false, false, true, false, true, false);
+            if (found) {
+                // 高亮显示搜索结果
+                var selection = window.getSelection();
+                var range = selection.getRangeAt(0);
+                var newNode = document.createElement("span");
+                newNode.setAttribute("class", "highlight");
+                range.surroundContents(newNode);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--导航栏上的头部-->
+    <div id="head" class="">
+        <div id="head2">
+            <div id="h2pic1"><a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6452f81f0d2dde577707285b.jpg" width="45%" height="90px"></a></div>
+            <div id="h2pic2"><img src="https://pic2.imgdb.cn/item/644f797c0d2dde577727876d.png" alt title="关学文化传承站" width="90%" height="100px"></div>
+            <!-- <div id="h2p"><h1>古&nbsp驿&nbsp之&nbsp旅&nbsp文&nbsp化&nbsp馆</h1></div> -->
+            <div id="time"> 
+                <p >
+                    <script>
+                        showTime();
+                    </script>
+                </p>
+            </div>
+            <div id="search" >
+                <!-- style="position: fixed; top: 60px; right: 20px;"   <label for="search">搜索</label> -->
+                <div id="s1"><input type="text" id="search-term" placeholder="请输入关键字..."></div>
+                <div id="s2"><button type="button" onclick="search()">搜索</button></div>
+            </div> 
+        </div>
+    </div>
+     <!--导航栏开始-->
+     <div id="menu"  class="">
+        <ul>
+            <li><a href="https://xawl-git-hub.github.io/">网站首页</a></li>
+            
+            <li><a href="">关中理学</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="2-1.html">关学概述</a></li>
+                        <li><a href="2-2.html">发展历史</a></li>
+                        <li><a href="2-3.html">学说内涵</a></li>
+                        <li><a href="2-4.html">研究现状</a></li>
+                        <li><a href="2-5.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">关中书院</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="5-1.html">书院概述</a></li>
+                        <li><a href="5-2.html">历史沿革</a></li>
+                        <li><a href="5-3.html">历代兴衰</a></li>
+                        <li><a href="5-4.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">文化现代传承</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="7-1.html">为往圣继绝学</a></li>      
+                        <li><a href="7-2.html">社会服务</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="">网上展厅</a>
+            <div id=""class="submenu">
+                <ul>
+                   <li><a href="3.html">书院展示</a></li>
+                </ul>
+            </div>
+            </li> 
+
+            <li><a href="">文创产品</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="4.html">点击这里</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">预约参观</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="6.html">参观指南</a></li>
+                        <li><a href="6-1.html">文化交流</a></li>
+                        <li><a href="6-2.html">注册用户</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+            </div>
+    <!--body导航栏之下-->
+    <div id="le"></div>
+
+    <!--新闻主内容-->
+    <div id="cen">
+        <h1 id="b11" align="center" >为往圣继绝学</h1><hr width="90%" style="border:double"></hr>
+        <div id="cen1">
+            <p class="p1">关学文化：</p><br>
+            <div><img class="ppic1" src="https://pic2.imgdb.cn/item/6452f6df0d2dde57770658c3.jpg" width="150px" height="300px" align="right"></div>
+            <p class="p1">横渠四句：为天地立心，为生民立命，为往圣继绝学，为万世开太平。</p><br>
+            <p class="p1">西安文理学院文化继承：</p><br>
+            <p class="p1">关中书院：</p>
+            <div><img class="ppic1" src="https://pic2.imgdb.cn/item/645085580d2dde5777903e3d.webp" width="300px" height="180px" align="left"></div>
+            <p class="p1">“关中书院”是明、清两代陕西的最高学府，西北书院之冠，位于现陕西省西安市。光绪二十九年（1903年），陕西巡抚升允改关中书院为陕西师范学堂，中华民国建立后改名为“陕西省立第一师范学校”；又更名为“陕西省立西安师范学校”。2009年7月，随着西安师范学校并入西安文理学院，自那时起关中书院就成为西安文理学院书院校区，接续了西安文理学院与关中书院深厚的历史渊源。</p><br>
+            
+            <p class="p1">校训继承：</p>
+            <p class="p1">重德、笃学、躬行、崇高</p><br>
+            <div><img class="ppic1" src="https://pic2.imgdb.cn/item/645092c40d2dde57779c86ff.jpg" width="300px" height="200px" align="right"></div>
+            <p class="p1">新校训承载着关中书院“敦本尚实，崇真践履”的文化内涵，贯穿着“育人为本，德育为先”的教育方针，寄托着转型升级，更名升大的奋斗目标。只有“重德”“笃学”“躬行”，才能达到“崇高”的境界；也只有树立了“崇高”的理想，才能在“重德”“笃学”“躬行”方面有所成就。</p><br>
+            
+            <p class="p1">学风继承：</p>
+            <p class="p1">校门石碑：“敦本尚实，崇真践履”是冯从吾在关中书院所倡导的学风，也是关学精神的主要体现。“敦本尚实”就是探究根本，注重实际在事物的本源处用功，不在未事上务求·即学习或做学问要明确“宗旨”，抓住核心，"崇真践履”就是崇尚真诚，躬行可自得。实践，在科学上追求至真，在道德上追求至善，言行合一，方可立世。</p><br>
+            <div><img class="ppic1" src="https://pic2.imgdb.cn/item/64508a400d2dde5777957cf6.jpg" width="300px" height="200px" align="left"></div>
+            <p class="p1">学术研究：</p>
+            <p class="p1">西安文理学院秉承关中书院“德教为先”、“务戒空谈”的作风，在教师队伍的建设上，更新观念、创新机制、稳步推进，同时，优化配置教学资源，重点突破，逐步形成教学和科研团队，出台了双师型教师队伍建设的新举措，全面提升教师的应用能力。按照“文理为基，工管为重，师范做精，专业做特”的专业发展思路，修订了应用型人才培养方案，加强实践教学，强化实践能力培养。学校启动了西安文理学院“大学生创新创业训练计划”，旨在增强大学生创新能力和创新基础上的创业能力，建立大学生参与科学研究和创新创业实践的培养机制，从而形成高素质应用型人才培养模式。</p>
+            <p class="p1">西安文理学院的学术研究，则继承了关学“学贵于有用”的朴实作风，注重脚踏实地。以“立足西安特色，做足汉唐文章”为理念，成立了长安历史文化研究中心。研究中心对长安历史及历史时期的哲学思想、政治制度、环境变迁、文学艺术等进行全方位综合研究，提升了西安市历史文化研究的整体水平。</p><br>
+            <p class="p1">话剧《冯从吾》：</p>
+            <p class="p1">《冯从吾》话剧是学校师生原创话剧，于2015年3月完成剧本创作，经过专家讨论、剧本修订、剧组成立、演员招募、剧本再创作等工作，历时3年打磨而成，总时长100分钟、分为4个篇章18幕、讲述了冯从吾心系黎明百姓，因为刚正不阿、直言进谏触怒皇帝被罢官还乡开创关中书院，期间不为宦党高压所动摇，坚持在关中书院讲学终成关学大师的故事。不同于现代话剧，《冯从吾》以真实存在的历史人物为原型，在创作过程中对文言文和白话文比例的把握，对人物动作、服装的设计都精心考究，充分体现了现代与传统的结合。公演过程中，精美的舞台设计美轮美奂；跌宕起伏的剧情引人入胜、发人深省；精彩的演出博得阵阵掌声。</p>
+            <div><img class="ppic1" src="https://pic2.imgdb.cn/item/64508f3f0d2dde5777997748.jpg" width="290px" height="160px" align="right"></div>
+            <p class="p1">话剧旨在弘扬传统文化，弘扬关学精神，展示文化自信。倡导师生学习体悟关学中“为天地立心，为生民立命，为往圣继绝学，为万世开太平”勇担历史重任的伟大情怀，树立“无驰于功利，无溺于辞章，无夺于毁誉”，为真理、为国家奉献青春的远大理想！《冯从吾》话剧的编排、演出是学校校园文化成果的经典代表，也是传承关学精神一面新旗帜！</p><br>
+            
+            <p class="p1">音乐会《往世》：</p>
+            <p class="p1">4月16日晚，夜幕下的关中书院灯光璀璨，一曲曲空灵的排箫与歌舞在这里响起，有着四百余年历史的书院与超凡脱俗的旋律交融，再现了关中书院的辉煌“往世”。一场由我校主办，我校关中书院、音乐学院以及西安音乐学院联合承办的《往世》——“百年书院、天籁国音”大型实景专场音乐会在西安文理学院关中书院校区举办。</p>
+            <div><img class="ppic1" src="https://pic2.imgdb.cn/item/64509a610d2dde5777a408f3.jpg" width="290px" height="200px" align="left"></div>
+            <p class="p1">当晚，中国著名排箫、笛子演奏家和教育家、全国竹笛协会会长、全国排箫研究会会长、原东方歌舞团业务副团长、原中国歌舞剧院院长林文增先生，著名笛箫演奏家、原中国人民解放军军乐团团长、原总歌剧团政委、素有“亚洲第一排箫”王子之称的杜聪先生，上海音乐学院民乐系博士生导师、著名笛子演奏家、教育家詹永明教授，著名作曲家黄荟先生，著名排箫演奏家吕涛先生，旅美排箫演奏家吴亚秋先生，西安音乐学院民乐系副主任、青年排箫演奏家高纯华老师等多位在业内享誉名望的专家们与我校校务委员曹鸿、音乐学院师生同台演出，相继奉献了排箫、朗诵、古典歌舞等曲目，给观众带来一场视听盛宴。</p>
+            <!-- <p class="p1">“活着”的书院：</p>
+            <div><img class="ppic1" src="https://pic2.imgdb.cn/item/645096d10d2dde5777a14917.webp" width="200px" height="140px" align="right"></div> -->
+            <p class="p1">本次主题实景音乐会最大的亮点是将会场设在了关中书院，国槐茂密如盖，飞檐翘角流转，以千年历史为背景，以纵横驰骋的思绪、凝重而炙热的情感、深厚而博大的气度、浪漫而写实的手法，从不同角度把历史与现实的情结交织联系在一起，既有对往昔历史的追忆，又有对当前现实的思索与感叹，以及对明天再度辉煌的热切冀望。让观众在音乐的陶冶中，纵览千年历史，实现诗与远方的和谐交响。西安文理学院关中书院将定期开展传统文化、传统艺术展演，古老的书院也与传统文化完美融合，为传统音乐和传统文化传承注入了新的传播形式，也将形成独一无二的关中书院新名片。</p><br>
+            
+        </div>
+    </div>
+
+    <!--底部栏，每页一样-->
+    <div id="bo">
+        <div id="b1">
+            <div id="b1pic1">
+                <a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6452f81f0d2dde577707285b.jpg" alt="" width=100px;></a>
+            </div>
+            <div id="b1p">
+                <p id="b1p1">友情链接:</p><br>
+                <p id="b1p2">
+                    <a href="http://www.xa.gov.cn/" class="b1">西安市人民政府</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://wlj.xa.gov.cn/"   class="b1">西安市文化和旅游局</a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.sxhm.com/"  class="b1">陕西历史博物馆</a><br>
+                    <a href="http://www.xawl.edu.cn/"  class="b1">西安文理学院</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://cyc.xawl.edu.cn/"  class="b1">西安文理学院产业集团</a>&nbsp;&nbsp;
+                </p><br>
+                <footer>
+                    <p id="b1p2">关学文化传承站 Guanxue Cultural Heritage Station © 2023</p>
+                </footer>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
