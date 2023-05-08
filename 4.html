@@ -1,0 +1,462 @@
+<!--4-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文创产品</title>
+    <link rel="icon" type="image/x-icon" href="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" />
+    <style>
+        *{
+            margin: auto;
+            /* background-color: #f8fadb; */
+        }
+        #head{
+            width:100%;
+            height: 100px;
+            background-image: url("https://pic.imgdb.cn/item/642d135fa682492fccde13a7.png");
+            background-repeat: repeat;
+        }
+        #head2{
+            margin: 0px 0px 0px 15%;
+            width: 85%;/*图片所在div长85%*/
+            height: 100px;
+            border:0;
+            float: left;
+        }
+        #h2pic1{
+            width: 23%;
+            height: 100px;
+            float: left;
+            padding: 5px 0px 5px 0px;
+            /* border:1px solid #333333; */
+        }
+        #h2pic2{
+            width: 50%;
+            height: 100px;
+            float: left;
+            padding: 0px 0px 18px 0px;
+            /* border:1px solid #333333; */
+        }
+        #time{
+            margin: 18px 17px 0px 0px;/*上右下左外距*/
+            width: auto;
+            height: 25px;
+            float: right;/*左浮动*/
+            text-align: center;
+            color: #3378d7;
+            /* background-color: rgb(252, 252, 252);时钟背景颜色 */
+            font-size: 15px;/*时间字体大小*/
+            /* border:1px solid #333333; */
+        } 
+        #search{
+            width: 22%;
+            height: auto;
+            float: right; 
+            padding: 10px 0px 0px 0px;
+        } 
+        #s1{
+            width: 65%;
+            height: auto;
+            float: left;
+        }
+        #s2{
+            width: 25%;
+            height: auto;
+            float: right;
+        }
+        #menu{
+    padding-left:15%;/*导航栏位置据开头*/
+    margin:0 auto;
+    text-align:center;
+    /* width:100%; */
+    height:60px;
+    background:#3c3a37;/*#f8fadb*/
+    border-bottom:1px solid #7f0808;/*底部边框类型颜色*/
+}
+#menu ul{
+    margin:0px;
+    padding:0px;
+    text-align:center;/*文本居中*/
+}
+.submenu{
+    width:1000px;/*二级盒子长*/
+    height:28px;
+    text-align:center;
+}
+#menu ul li{
+    height:30px;
+    width:115px;
+    list-style:none;
+    float:left;
+    display:inline;/*设置对象作为行内元素*/
+    font:0.9em Arial,Helvetica,sana-serif;/*列表字体属性*/
+    text-align:center;
+}
+ul li a{
+    color:#FFF;/*一级导航字体颜色#3378d7*/
+    width:114px;
+    margin:0px;
+    padding:0px 0px 0px 0px ;
+    text-decoration:none;
+    display:block;/*设置成块级元素*/
+    background:#3c3a37;/*一级导航块颜色*/
+    line-height:29px;
+    border-bottom:1px solid #ccc;
+}
+ul li .submenu ul li{
+    height :25px;/*二级列表高度*/
+}
+ul li .submenu ul li a{
+    color: #eeb01f;/*二级字体颜色*/
+    background:rgb(64, 67, 67);/*二级导航栏本身背景*/
+}
+ul li a:hover{
+    background:rgb(56, 52, 52);/*一级背景*/
+    border-bottom:1px dashed red;/*边框底部颜色类型*/
+}
+ul li .submenu{
+    display:none;/*隐藏二级导航*/
+}
+.submenu ul li{
+    height:24px;
+    width:113px;
+    list-style:none;/*列标：无*/
+    float:left;
+    display:inline;
+    font:0.8em Arial, Helvetica, sans-serif;
+    text-align:center; 
+}
+ul li:hover .submenu{
+    display:block;
+}
+ul li .submenu ul li a:hover{
+    color: #FFF;/*滑动时字体颜色*/
+    background:rgb(6, 75, 100);/*二级导航滑动时背景*/
+}
+        a{
+            text-decoration: none;/*无下划线*/
+        }
+        /* 内容css */
+        #le{
+            width: 15%;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            float: left;
+        }
+        #cen{
+            margin: 0;
+            width: 70%;
+            height: auto;
+            background-color: #fafbe0;
+            float: left;
+            /* border-top:10px solid #3378d7;    */
+            border-bottom:10px solid #3378d7;   
+        }
+        #b11{
+            color: #3378d7;
+        }
+        #c1p2{
+            width: 70%;
+            height: auto;
+            float: left;
+            border : 1px solid #000000;
+            padding: 2px 0px 50px 0px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #c1p21{
+            width: 40%;
+            height:350px;
+            float: left;
+            padding: 2em;
+            overflow: hidden;
+        }
+        /* #c1p21 img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        #c1p21:hover img {
+            orm: scale(1.1);
+        } */
+
+        #c1p22{
+            width: 40%;
+            height:350px;
+            float: left;
+            padding: 2em;
+            /* border-bottom: 1px solid #333333;  */
+        }
+        #c1p23{
+            width: 40%;
+            height:350px;
+            float: left;
+            padding: 2em;
+            /* border-bottom: 1px solid #333333;  */
+        }
+        #c1p24{
+            width: 40%;
+            height:350px;
+            float: left;
+            padding: 2em;
+            /* border-bottom: 1px solid #333333;  */
+        }
+        #c1p25{
+            width: 40%;
+            height:350px;
+            float: left;
+            padding: 2em;
+            /* border-bottom: 1px solid #333333;  */
+        }
+        #c1p26{
+            width: 40%;
+            height:350px;
+            float: left;
+            padding: 2em;
+            /* border-bottom: 1px solid #333333;  */
+        }
+        .p0{
+            font-family: 黑体;line-height: 1.5em;
+        }
+        .p1{
+            text-indent: 2em;
+        }
+        #ri{
+            width: 15%;
+            height: 1500px;
+            background-color: rgb(255, 255, 255);
+            float: right;
+        }
+        /* 底部css */
+        #bo{
+    width: 100%;
+    height: 170px;
+    padding: 0px 0px 0px 15% ;
+    float: left;
+    border-bottom: 20px solid #1e1d19;
+}
+#b1{
+    width: 70%;
+    height: 170px;
+    float: left;
+    /* margin: 0 auto; */
+    background-color: #3c3a37;/*#fafbe0*/
+    /* border:solid #e041d0; */
+}
+#b1pic1{
+    width: 20%;
+    height: 110px;
+    float: left;
+    /* border:solid #7f0808; */
+    padding: 30px 0px 0px 60px;
+}
+#b1p{
+    width: 60%;
+    height: auto;
+    float: left;
+    /* border:solid #49ae2a; */
+    padding: 30px 30px 40px 80px;
+}
+#b1p1{/*友情链接*/
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+#b1p2{
+    color: #fffefe;
+    align-items: center;
+}
+.b1{
+    color:#e0c455 ;/*#3377d7*/
+}
+        /* #divpic:hover img{
+            cursor: pointer;
+            transform: scale(1.1);
+            opacity: 1;
+        } */
+        #divpic:hover img{
+            cursor: pointer;
+            transform: scale(0.9);
+            opacity: 1;
+        }
+        #divpic img{
+            transition: transform 0.3s ease;
+        }
+    </style>
+<!-- 头部时间js -->
+    <script>
+        function showTime(){
+            var time = new Date();
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            var year = time.getUTCFullYear();
+            var month = time.getUTCMonth()+1;
+            var day = time.getUTCDate();
+            var mytime = year + "年" + month + "月" + day + "日" + hour + ":" +minute+ ":" +second;
+            document.getElementById("time").innerHTML= mytime;
+            setTimeout("showTime()",1000);
+        }
+        function search() {
+            var searchTerm = document.getElementById("search-term").value;
+            var found = window.find(searchTerm, false, false, true, false, true, false);
+            if (found) {
+                // 高亮显示搜索结果
+                var selection = window.getSelection();
+                var range = selection.getRangeAt(0);
+                var newNode = document.createElement("span");
+                newNode.setAttribute("class", "highlight");
+                range.surroundContents(newNode);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--导航栏上的头部-->
+    <div id="head" class="">
+        <div id="head2">
+            <div id="h2pic1"><a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" width="55%" height="100%"></a></div>
+            <div id="h2pic2"><img src="https://pic2.imgdb.cn/item/644f797c0d2dde577727876d.png" alt title="关学文化传承站" width="90%" height="100px"></div>
+            <!-- <div id="h2p"><h1>古&nbsp驿&nbsp之&nbsp旅&nbsp文&nbsp化&nbsp馆</h1></div> -->
+            <div id="time"> 
+                <p >
+                    <script>
+                        showTime();
+                    </script>
+                </p>
+            </div>
+            <div id="search" >
+                <!-- style="position: fixed; top: 60px; right: 20px;"   <label for="search">搜索</label> -->
+                <div id="s1"><input type="text" id="search-term" placeholder="请输入关键字..."></div>
+                <div id="s2"><button type="button" onclick="search()">搜索</button></div>
+            </div> 
+        </div>
+    </div>
+     <!--导航栏开始-->
+     <div id="menu"  class="">
+        <ul>
+            <li><a href="https://xawl-git-hub.github.io/">网站首页</a></li>
+            
+            <li><a href="">关中理学</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="2-1.html">关学概述</a></li>
+                        <li><a href="2-2.html">发展历史</a></li>
+                        <li><a href="2-3.html">学说内涵</a></li>
+                        <li><a href="2-4.html">研究现状</a></li>
+                        <li><a href="2-5.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">关中书院</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="5-1.html">书院概述</a></li>
+                        <li><a href="5-2.html">历史沿革</a></li>
+                        <li><a href="5-3.html">历代兴衰</a></li>
+                        <li><a href="5-4.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">文化现代传承</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="7-1.html">为往圣继绝学</a></li>      
+                        <li><a href="7-2.html">社会服务</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="">网上展厅</a>
+            <div id=""class="submenu">
+                <ul>
+                   <li><a href="3.html">书院展示</a></li>
+                </ul>
+            </div>
+            </li> 
+
+            <li><a href="">文创产品</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="4.html">点击这里</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">预约参观</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="6.html">参观指南</a></li>
+                        <li><a href="6-1.html">文化交流</a></li>
+                        <li><a href="6-2.html">注册用户</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+            </div>
+    <!--body导航栏之下-->
+    <div id="le"></div>
+
+    <!--新闻主内容-->
+    <div id="c1p2">
+        <h2 id="b11" align="center" >文创周边</h2><hr width="95%" style="border:solid"></hr>
+        <div id="c1p21">
+            <p class="p0">木版画：</p>
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/642cd91ba682492fcc87ce37.jpg"  alt title="木版画" width="350px" height="250px" align="center"></div>
+            <p class="p1">木版画是一种源远流长的艺术形式，一张张美丽的图像通过巧妙的雕刻和印刷，展现了刻画在我们历史中的美好记忆和文化遗产。</p>
+        </div>
+        <div id="c1p22">
+            <p class="p0">书法艺术册：</p>
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/642c48eaa682492fccc86d91.jpg" alt title="书法艺术册" width="350px" height="250px" align="center"></div>
+            <p class="p1">书法是中华文化瑰宝，平凡纸笔书写出千古意蕴。华夏文明源远流长，千年书道孕育出精湛技艺。以毛笔点翰中华文明的瑰宝，体现精神的高贵与品位的卓越。</p>
+        </div>
+        <div id="c1p23">
+            <p class="p0">笔记本：</p>
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/642c486ca682492fccc75a03.jpg" alt title="笔记本" width="350px" height="250px" align="center"></div>
+            <p class="p1">遇见历史，品味文化，传承关学文化。每一张纸张都饱含时代气息，充满人文情怀，品味每一个痕迹，感受每一抹笔画，用笔尖临摹历史，用心阅读文明。</p>
+        </div>
+        <div id="c1p24">
+            <p class="p0">明信片：</p>
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/642c4960a682492fccc9bf0e.jpg" alt title="明信片" width="350px" height="250px" align="center"></div>
+            <p class="p1">这些明信片以关中书院等为主，用美丽的图画和卓越的设计，将关学的历史和文化魅力展现得淋漓尽致。</p>
+        </div>
+        <!-- <div id="c1p25">
+            <p class="p0">T恤衫：</p>
+            <div id="divpic"><img src="https://pic1.imgdb.cn/item/6443a5510d2dde5777195c96.jpg" alt title="T恤衫" width="350px" height="250px" align="center"></div>
+            <p class="p1">呈现古老历史的驿站印刷，重塑在T恤上的时尚潮流。精美图案与经典字体，为你的穿搭增添艺术范。历史弥足珍贵，传承值得信赖。</p>
+        </div>
+        <div id="c1p26">
+            <p class="p0">文创信封:</p>
+            <div id="divpic"><img src="https://pic1.imgdb.cn/item/6443a5870d2dde577719ab25.png"  alt title="文创信封" width="350px" height="250px" align="center"></div>
+            <p class="p1">将古老驿站邮件的历史印于现代信封，用传承的墨与时光的痕迹相交错，让远古繁华与现代典雅重叠，创造出独具魅力的产品。</p>
+        </div> -->
+    </div>
+
+
+    <!--底部栏，每页一样-->
+    <div id="bo">
+        <div id="b1">
+            <div id="b1pic1">
+                <a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" alt title="关学文化传承站" width="80%"></a>
+            </div>
+            <div id="b1p">
+                <p id="b1p1">友情链接:</p><br>
+                <p id="b1p2">
+                    <a href="http://www.xa.gov.cn/" class="b1">西安市人民政府</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://wlj.xa.gov.cn/"   class="b1">西安市文化和旅游局</a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.sxhm.com/"  class="b1">陕西历史博物馆</a><br>
+                    <a href="http://www.xawl.edu.cn/"  class="b1">西安文理学院</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://cyc.xawl.edu.cn/"  class="b1">西安文理学院产业集团</a>&nbsp;&nbsp;
+                </p><br>
+                <footer>
+                    <p id="b1p2">关学文化传承站 Guanxue Cultural Heritage Station © 2023</p>
+                </footer>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

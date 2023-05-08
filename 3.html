@@ -1,0 +1,247 @@
+ <!--3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书院展示</title>
+    <link rel="icon" type="image/x-icon" href="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" />
+    <link type="text/css" rel="stylesheet" href="3.css"/>
+<!-- 头部时间js -->
+    <script>
+        function showTime(){
+            var time = new Date();
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            var year = time.getUTCFullYear();
+            var month = time.getUTCMonth()+1;
+            var day = time.getUTCDate();
+            var mytime = year + "年" + month + "月" + day + "日" + hour + ":" +minute+ ":" +second;
+            document.getElementById("time").innerHTML= mytime;
+            setTimeout("showTime()",1000);
+        }
+        function search() {
+            var searchTerm = document.getElementById("search-term").value;
+            var found = window.find(searchTerm, false, false, true, false, true, false);
+            if (found) {
+                // 高亮显示搜索结果
+                var selection = window.getSelection();
+                var range = selection.getRangeAt(0);
+                var newNode = document.createElement("span");
+                newNode.setAttribute("class", "highlight");
+                range.surroundContents(newNode);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--导航栏上的头部-->
+    <div id="head" class="">
+        <div id="head2">
+            <div id="h2pic1"><a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" width="55%" height="100%"></a></div>
+            <div id="h2pic2"><img src="https://pic2.imgdb.cn/item/644f797c0d2dde577727876d.png" alt title="关学文化传承站" width="90%" height="100px"></div>
+            <!-- <div id="h2p"><h1>古&nbsp驿&nbsp之&nbsp旅&nbsp文&nbsp化&nbsp馆</h1></div> -->
+            <div id="time"> 
+                <p >
+                    <script>
+                        showTime();
+                    </script>
+                </p>
+            </div>
+            <div id="search" >
+                <!-- style="position: fixed; top: 60px; right: 20px;"   <label for="search">搜索</label> -->
+                <div id="s1"><input type="text" id="search-term" placeholder="请输入关键字..."></div>
+                <div id="s2"><button type="button" onclick="search()">搜索</button></div>
+            </div> 
+        </div>
+    </div>
+     <!--导航栏开始-->
+     <div id="menu"  class="">
+        <ul>
+            <li><a href="https://xawl-git-hub.github.io/">网站首页</a></li>
+            
+            <li><a href="">关中理学</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="2-1.html">关学概述</a></li>
+                        <li><a href="2-2.html">发展历史</a></li>
+                        <li><a href="2-3.html">学说内涵</a></li>
+                        <li><a href="2-4.html">研究现状</a></li>
+                        <li><a href="2-5.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">关中书院</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="5-1.html">书院概述</a></li>
+                        <li><a href="5-2.html">历史沿革</a></li>
+                        <li><a href="5-3.html">历代兴衰</a></li>
+                        <li><a href="5-4.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">文化现代传承</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="7-1.html">为往圣继绝学</a></li>      
+                        <li><a href="7-2.html">社会服务</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="">网上展厅</a>
+            <div id=""class="submenu">
+                <ul>
+                   <li><a href="3.html">书院展示</a></li>
+                </ul>
+            </div>
+            </li> 
+
+            <li><a href="">文创产品</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="4.html">点击这里</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">预约参观</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="6.html">参观指南</a></li>
+                        <li><a href="6-1.html">文化交流</a></li>
+                        <li><a href="6-2.html">注册用户</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+            </div>
+    <!--body导航栏之下-->
+    <div id="le"></div>
+
+    <!--新闻主内容-->
+    <div id="c1p2">
+        <h2 id="b11" align="center" >书院展示</h2><hr width="95%" style="border:solid"></hr>
+        <div id="c1p21">
+            
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/645130030d2dde577750c6d3.jpg"  alt title="关中书院牌坊" width="350px" height="250px" align="center"></div>
+            <p class="p1">关中书院牌坊，正面为“关中书院”金色四字，“尚德”、“崇文”，背面为“慎思”、“笃行”。</p>
+        </div>
+        <div id="c1p22">
+            
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/64512fdd0d2dde577750987e.jpg" alt title="书院门牌坊" width="350px" height="250px" align="center"></div>
+            <p class="p1">通常所说的“书院门”，指的是从碑林到关中书院门口的一条步行街，书院门的地名起源于在它里面的关中书院。</p>
+        </div>
+        <div id="c1p23">
+            
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/64512fa80d2dde5777504121.jpg" alt title="张载像" width="350px" height="250px" align="center"></div>
+            <p class="p1">张载（1020年—1077年12月6日），字子厚，后侨寓于凤翔眉县横渠镇（今陕西眉县横渠镇）并在该地安家、讲学，世称“横渠先生”。</p>
+        </div>
+        <div id="c1p24">
+            
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/644f92b30d2dde5777442914.webp" alt title="冯从吾像" width="350px" height="250px" align="center"></div>
+            <p class="p1">冯从吾（1557—1627年），字仲好，号少墟，陕西西安府长安县（今陕西省西安市）人。著名思想家、教育家。创办关中书院，人称“关西夫子”。</p>
+        </div>
+
+        <div id="c1p33">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452887e0d2dde5777b11074.jpg" alt title="保护文物-关中书院" width="350px" height="250px" align="center"></div>
+            <p class="p1">西安市第一批重点文物保护单位-关中书院</p>
+            
+        </div>
+        <div id="c1p34">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452887d0d2dde5777b10fef.jpg" alt title="关中书院3D展示" width="350px" height="250px" align="center"></div>
+            <p class="p1">关中书院3D模型展示</p>
+            
+        </div>
+
+
+        <div id="c1p25">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6451316b0d2dde577752f87f.jpg" alt title="学高为师" width="350px" height="250px" align="center"></div>
+            <!-- <p class="p1">马嵬兵变是指唐高宗李治的长子李建成和幼子李元吉联合王世充在马嵬驿发动的政变事件，这一事件对唐朝的历史产生了深远的影响。</p> -->
+            <p class="p1">学高为师</p>
+        </div>
+        <div id="c1p26">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6451316a0d2dde577752f6f5.jpg" alt title="身正为范" width="350px" height="250px" align="center"></div>
+            <!-- <p class="p1">杨贵妃墓则是位于西安市雁塔区临潼区北三十公里的一座古代皇家墓葬，是中国历史上著名的文化遗产之一。</p> -->
+            <p class="p1">身正为范</p>
+        </div>
+
+        <div id="c1p27">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452852e0d2dde5777adce70.jpg" alt title="晨钟" width="350px" height="250px" align="center"></div>
+            <p class="p1">晨钟</p>
+            
+        </div>
+        <div id="c1p28">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452852e0d2dde5777adceb8.jpg" alt title="暮鼓" width="350px" height="250px" align="center"></div>
+            <p class="p1">暮鼓</p>
+            
+        </div>
+
+        <div id="c1p35">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452887d0d2dde5777b11029.jpg" alt title="关中书院简介石碑" width="350px" height="250px" align="center"></div>
+            <p class="p1">关中书院简介石碑</p>
+            
+        </div>
+        <div id="c1p36">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452887e0d2dde5777b110cb.jpg" alt title="世界学联代表团石碑" width="350px" height="250px" align="center"></div>
+            <p class="p1">世界学联代表团石碑</p>
+            
+        </div>
+
+        <div id="c1p31">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/645287230d2dde5777aff44f.jpg" alt title="秦川浴德" width="350px" height="250px" align="center"></div>
+            <p class="p1">乾隆御赐“秦川浴德”的匾额，是书院的中心讲堂。</p>
+            
+        </div>
+        <div id="c1p32">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/645287240d2dde5777aff471.jpg" alt title="书法" width="350px" height="250px" align="center"></div>
+            <p class="p1">书法</p>
+            
+        </div>
+
+        <div id="c1p29">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452864e0d2dde5777af2e36.jpg" alt title="壁画-司马光砸缸" width="350px" height="250px" align="center"></div>
+            <!-- <p class="p1">杨贵妃墓则是位于西安市雁塔区临潼区北三十公里的一座古代皇家墓葬，是中国历史上著名的文化遗产之一。</p> -->
+            <p class="p1">壁画-司马光砸缸</p>
+        </div>
+        <div id="c1p30">
+            <div id="divpic"><img src="https://pic2.imgdb.cn/item/6452864e0d2dde5777af2e75.jpg" alt title="壁画-王羲之临地学书" width="350px" height="250px" align="center"></div>
+            <!-- <p class="p1">杨贵妃墓则是位于西安市雁塔区临潼区北三十公里的一座古代皇家墓葬，是中国历史上著名的文化遗产之一。</p> -->
+            <p class="p1">壁画-王羲之临地学书</p>
+        </div>
+
+        
+
+        
+        
+    </div>
+
+    <!--底部栏，每页一样-->
+    <div id="bo">
+        <div id="b1">
+            <div id="b1pic1">
+                <a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" alt title="关学文化传承站" width="80%"></a>
+            </div>
+            <div id="b1p">
+                <p id="b1p1">友情链接:</p><br>
+                <p id="b1p2">
+                    <a href="http://www.xa.gov.cn/" class="b1">西安市人民政府</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://wlj.xa.gov.cn/"   class="b1">西安市文化和旅游局</a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.sxhm.com/"  class="b1">陕西历史博物馆</a><br>
+                    <a href="http://www.xawl.edu.cn/"  class="b1">西安文理学院</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://cyc.xawl.edu.cn/"  class="b1">西安文理学院产业集团</a>&nbsp;&nbsp;
+                </p><br>
+                <footer>
+                    <p id="b1p2">关学文化传承站 Guanxue Cultural Heritage Station © 2023</p>
+                </footer>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

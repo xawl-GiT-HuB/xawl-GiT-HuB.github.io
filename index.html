@@ -1,0 +1,243 @@
+<!--首页-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关中书院 Guanzhong Academy</title>
+    <link rel="icon" type="image/x-icon" href="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" />
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+<!-- 头部时间js -->
+    <script>
+        function showTime(){
+            var time = new Date();
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            var year = time.getUTCFullYear();
+            var month = time.getUTCMonth()+1;
+            var day = time.getUTCDate();
+            var mytime = year + "年" + month + "月" + day + "日" + hour + ":" +minute+ ":" +second;
+            document.getElementById("time").innerHTML= mytime;
+            setTimeout("showTime()",1000);
+        }
+
+        function search() {
+            var searchTerm = document.getElementById("search-term").value;
+            var found = window.find(searchTerm, false, false, true, false, true, false);
+            if (found) {
+                // 高亮显示搜索结果
+                var selection = window.getSelection();
+                var range = selection.getRangeAt(0);
+                var newNode = document.createElement("span");
+                newNode.setAttribute("class", "highlight");
+                range.surroundContents(newNode);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--导航栏上的头部-->
+    <div id="head" class="">
+        <div id="head2">
+            <div id="h2pic1"><a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" width="55%" height="100%"></a></div>
+            <div id="h2pic2"><img src="https://pic2.imgdb.cn/item/644f797c0d2dde577727876d.png" alt title="关学文化传承站" width="90%" height="100px"></div>
+            <!-- <div id="h2p"><h1>关&nbsp中&nbsp书&nbsp院——关学文化传承</h1></div> -->
+            <div id="time"> 
+                <p >
+                    <script>
+                        showTime();
+                    </script>
+                </p>
+            </div>
+            
+            <div id="search" >
+                <!-- style="position: fixed; top: 60px; right: 20px;"   <label for="search">搜索</label> -->
+                <div id="s1"><input type="text" id="search-term" placeholder="请输入关键字..."></div>
+                <div id="s2"><button type="button" onclick="search()">搜索</button></div>
+            </div> 
+
+        </div>
+    </div>
+     <!--导航栏开始-->
+     <div id="menu"  class="">
+        <ul>
+            <li><a href="https://xawl-git-hub.github.io/">网站首页</a></li>
+            
+            <li><a href="">关中理学</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="2-1.html">关学概述</a></li>
+                        <li><a href="2-2.html">发展历史</a></li>
+                        <li><a href="2-3.html">学说内涵</a></li>
+                        <li><a href="2-4.html">研究现状</a></li>
+                        <li><a href="2-5.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">关中书院</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="5-1.html">书院概述</a></li>
+                        <li><a href="5-2.html">历史沿革</a></li>
+                        <li><a href="5-3.html">历代兴衰</a></li>
+                        <li><a href="5-4.html">代表人物</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">文化现代传承</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="7-1.html">为往圣继绝学</a></li>      
+                        <li><a href="7-2.html">社会服务</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="">网上展厅</a>
+            <div id=""class="submenu">
+                <ul>
+                   <li><a href="3.html">书院展示</a></li>
+                </ul>
+            </div>
+            </li> 
+
+            <li><a href="">文创产品</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="4.html">点击这里</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="">预约参观</a>
+                <div id=""class="submenu">
+                    <ul>
+                        <li><a href="6.html">参观指南</a></li>
+                        <li><a href="6-1.html">文化交流</a></li>
+                        <li><a href="6-2.html">注册用户</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+            </div>
+            <!--body导航栏之下-->
+                <div id="le"></div>
+                <div id="cen">
+                    <div id="c1pic">
+                        <marquee behavior="" direction="" onmouseover="javascript:this.stop();" onmouseout="javascript:this.start();">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f32a30d2dde5777dc0a67.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f330d0d2dde5777dcb733.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f92b30d2dde5777442914.webp" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f92b30d2dde5777442943.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f32a30d2dde5777dc0a2c.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f32a30d2dde5777dc09fb.png" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f32a30d2dde5777dc09d5.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f32a30d2dde5777dc0991.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f7ff20d2dde57772fc806.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f7ff30d2dde57772fc9f6.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f7ff30d2dde57772fca24.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f7ff10d2dde57772fc6a1.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f7ff20d2dde57772fc7c3.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f80600d2dde5777305e2f.jpg" width="600px" height="350px">
+                            <img  id="" src="https://pic2.imgdb.cn/item/644f805f0d2dde5777305d5d.jpg" width="600px" height="350px">
+                            
+                        </marquee>
+                    </div>
+                    <div id="c1p1">
+                            <div id="div2">
+                                <a id="p1" href="https://www.mct.gov.cn/" >书院资讯</a>
+                                <a href="https://www.mct.gov.cn/"><span id="p2">MORE>></span></a>
+                            </div>
+                            <hr size="2" width="100%"></hr>
+                            <div id="div3">
+                                <ul id="news">
+                                    <a href="http://cyc.xawl.edu.cn/jqzx/jqzx/88624.htm"><li class="p3">千年古音与百年书院的天籁和鸣--大型实景专场音乐会《往世》在关中书院上演<span class="p4">04-20</span></li></a><br>
+                                    <a href="http://cyc.xawl.edu.cn/jqzx/jqzx/88238.htm"><li class="p3">“南岳麓”与“北关中”的时空对话 | “关中书院大讲堂”首讲开坛<span class="p4">04-16</span></li></a><br>
+                                    <a href="https://www.mct.gov.cn/whzx/whyw/202303/t20230330_941035.htm"><li class="p3">回归文献：书院研究何以突破瓶颈<span class="p4">04-06</span></li></a><br>
+                                    <a href="http://cyc.xawl.edu.cn/cyzx/87826.htm"><li class="p3">让优秀传统文化“活起来”“潮起来”<span class="p4">03-15</span></li></a><br>
+                                    <a href="http://cyc.xawl.edu.cn/cyzx/87833.htm"><li class="p3">让传统文化焕发蓬勃生命力<span class="p4">01-13</span></li></a><br>
+                                </ul>
+                            </div>
+                    </div>
+
+                    <div id="vid"><iframe frameborder="0"  height="500px" width=100% src="https://v.qq.com/txp/iframe/player.html?vid=y0312f112ri" allowFullScreen="true"></iframe></div>
+                    
+                    <div id="c1p2">
+                        <h2 id="b11" align="center" >全面贴心    服务大众</h2><hr width="95%" style="border:solid"></hr>
+                        <div id="c1p21">
+                            
+                            <div id="divpic"><a href="7-1.html"><img src="https://pic2.imgdb.cn/item/644f7d3c0d2dde57772ccbd1.png" alt title="文化传承" width="100%" height="250px" align="center"></a></div>
+                        </div>
+                        <div id="c1p22">
+                            <div id="divpic"><a href="7-2.html"><img src="https://pic2.imgdb.cn/item/644f7db00d2dde57772d425a.png" alt title="社会服务" width="100%" height="250px" align="center"></a></div>
+                            
+                        </div>
+                        <div id="c1p24">
+                            
+                            <div id="divpic"><a href="3.html"><img src="https://pic.imgdb.cn/item/642d1ef5a682492fccf62144.png" alt title="线上展示" width="100%" height="250px" align="center"></a></div>
+                            
+                        </div>
+
+                        <div id="c1p23">
+                            
+                            <div id="divpic"><a href="4.html"><img src="https://pic.imgdb.cn/item/642d1f21a682492fccf66252.png" alt title="文化创意" width="100%" height="250px" align="center"></a></div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div id="c1p3">
+                        <h2 id="b11" align="center" >书院楹联</h2><hr width="100%" style="border:solid"><br></hr>
+                            <div id="c1p31">
+                                <marquee behavior="" direction="right" onmouseover="javascript:this.stop();" onmouseout="javascript:this.start();">
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130b90d2dde577751b981.jpg" width="100%" height="300px"></a>
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130b90d2dde577751b87b.jpg" width="100%" height="300px"></a>
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130b90d2dde577751b90f.jpg" width="100%" height="300px"></a>
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130720d2dde5777515cfb.jpg" width="100%" height="300px"></a>
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130740d2dde5777515ee4.jpg" width="100%" height="300px"></a>
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130740d2dde5777515f51.jpg" width="100%" height="300px"></a>
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130740d2dde5777515fab.jpg" width="100%" height="300px"></a>
+                                    <a href=""><img  id="" src="https://pic2.imgdb.cn/item/645130710d2dde5777515ad0.jpg" width="100%" height="300px"></a>
+                                </marquee>
+                            </div>
+                            <div id="c1p32">
+                                <p class="p0">佳句欣赏：</p>
+                                <p class="p1">●碑林藏国宝；书院育人杰。</p>
+                                <p class="p1">●藏增智良卷；育树人俊才。</p>
+                                <p class="p1">●汇人间群书博览之，何其好也；集天下英才教育之，不亦乐乎。</p>
+                                <p class="p1">●学高为师；身正为范。</p>
+                                <p class="p1">●士所尚在志，行远登高，万里鹏程关学问；业必精于勤，博闻强识，三余蛾术惜光阴。</p>
+                                <p class="p1">●捧着一颗心来；不带半根草去。</p>
+                                <p class="p1">●学春蚕吐丝丝丝不断；做蜡烛照路路路通明。</p>
+                                
+                            </div>
+                    </div>
+                </div>
+        <!--底部栏，每页一样-->
+                <div id="bo">
+                    <div id="b1">
+                        <div id="b1pic1">
+                            <a href="https://xawl-git-hub.github.io/"><img src="https://pic2.imgdb.cn/item/6458fda60d2dde577700ef1c.png" alt title="关学文化传承站" width="80%"></a>
+                        </div>
+                        <div id="b1p">
+                            <p id="b1p1">友情链接:</p><br>
+                            <p id="b1p2">
+                                <a href="http://www.xa.gov.cn/" class="b1">西安市人民政府</a>&nbsp;&nbsp;&nbsp;
+                                <a href="http://wlj.xa.gov.cn/" class="b1">西安市文化和旅游局</a>&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.sxhm.com/" class="b1">陕西历史博物馆</a><br>
+                                <a href="http://www.xawl.edu.cn/" class="b1">西安文理学院</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="http://cyc.xawl.edu.cn/" class="b1">西安文理学院产业集团</a>&nbsp;&nbsp;
+                            </p><br>
+                            <footer>
+                                <p id="b1p2">关学文化传承站 Guanxue Cultural Heritage Station © 2023</p>
+                            </footer>
+                        </div>
+                        
+                    </div>
+                </div>
+            </body>
+        </html>
